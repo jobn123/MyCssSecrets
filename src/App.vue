@@ -6,6 +6,7 @@
 
 <script>
 import Hello from './components/Hello'
+import 'ress'
 
 export default {
   name: 'app',

@@ -3,7 +3,7 @@
     <div class="" id="test">
 
     </div>
-    <figure>
+    <figure class="tb_container">
       <figcaption>
         半透明边框
       </figcaption>
@@ -48,6 +48,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.tb_container {
+  background: gray;
+}
 .translucent_border {
   width: 50px;
   height: 50px;
