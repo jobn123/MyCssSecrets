@@ -15,6 +15,16 @@
         </pre>
       </figcaption>
     </figure>
+    <figure class="mb_container">
+      <figcaption>
+        多重边框
+      </figcaption>
+      <div class="multiple_border" id="tb">
+      </div>
+      <figcaption style="margin-top:20px;text-align:center">
+        box-shadow支持逗号分隔，可以创建任意数量投影
+      </figcaption>
+    </figure>
   </div>
 </template>
 
@@ -27,14 +37,12 @@ export default {
     }
   },
   created() {
-    debugger
     console.log("created");
   },
   beforeMount() {
     console.log("beforeMount");
   },
   mounted() {
-    debugger
     console.log("mounted");
   },
   beforeDestroy() {
@@ -51,6 +59,9 @@ export default {
 .tb_container {
   background: gray;
 }
+.mb_container {
+  background: white;
+}
 .translucent_border {
   width: 50px;
   height: 50px;
@@ -58,21 +69,13 @@ export default {
   background: green;
   background-clip: padding-box;
 }
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.multiple_border {
+  width: 50px;
+  height: 50px;
+  background: yellowgreen;
+  box-shadow: 0 0 0 10px #655,
+              0 0 0 15px deeppink,
+              0 2px 15px 15px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
 }
 </style>
