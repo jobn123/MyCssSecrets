@@ -35,6 +35,14 @@
         </div>
       </div>
     </figure>
+    <figure class="c2">
+      <figcaption>
+        条纹背景
+      </figcaption>
+      <div class="c2-out-div">
+
+      </div>
+    </figure>
   </div>
 </template>
 
@@ -101,5 +109,11 @@ export default {
   background: tan;
   border-radius: .8em;
   padding: 1em;
+}
+.c2-out-div {
+  width: 100%;
+  height: 100px;
+  background: -webkit-linear-gradient(#fb3 50%, #58a 50%);
+  background-size: 100% 20px
 }
 </style>
