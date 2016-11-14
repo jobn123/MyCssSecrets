@@ -25,6 +25,16 @@
         box-shadow支持逗号分隔，可以创建任意数量投影
       </figcaption>
     </figure>
+    <figure class="c1">
+      <figcaption>
+        边框内圆角
+      </figcaption>
+      <div class="c1-out-div">
+        <div class="c1-inner-div">
+          边框内圆角
+        </div>
+      </div>
+    </figure>
   </div>
 </template>
 
@@ -77,5 +87,19 @@ export default {
               0 0 0 15px deeppink,
               0 2px 15px 15px rgba(0, 0, 0, 0.6);
   margin: 0 auto;
+}
+.c1 {
+  width: 100%;
+}
+.c1-out-div {
+  background: #655;
+  padding: .8em;
+  width: 200px;
+  margin: 0 auto;
+}
+.c1-inner-div {
+  background: tan;
+  border-radius: .8em;
+  padding: 1em;
 }
 </style>
