@@ -40,7 +40,16 @@
         条纹背景
       </figcaption>
       <div class="c2-out-div">
-
+      </div>
+    </figure>
+    <figure class="c3">
+      <figcaption>
+        平行四边形
+      </figcaption>
+      <div class="c3-out-div">
+        <div class="" style="text-align: center;9">
+          hi test
+        </div>
       </div>
     </figure>
   </div>
@@ -115,5 +124,12 @@ export default {
   height: 100px;
   background: -webkit-linear-gradient(#fb3 50%, #58a 50%);
   background-size: 100% 20px
+}
+.c3-out-div {
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  margin: 0 auto;
+  transform: skewX(-45deg);
 }
 </style>
