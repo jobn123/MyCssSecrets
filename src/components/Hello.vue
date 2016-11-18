@@ -47,9 +47,23 @@
         平行四边形
       </figcaption>
       <div class="c3-out-div">
-        <div class="" style="text-align: center;9">
+        <div class="" style="text-align: center;">
           hi test
         </div>
+      </div>
+    </figure>
+    <figure class="c4">
+      <figcaption>
+        投影
+      </figcaption>
+      <div class="c4-out-div">
+      </div>
+    </figure>
+    <figure class="c5">
+      <figcaption>
+        只有底边的投影
+      </figcaption>
+      <div class="c5-out-div">
       </div>
     </figure>
   </div>
@@ -131,5 +145,12 @@ export default {
   border: 1px solid;
   margin: 0 auto;
   transform: skewX(-45deg);
+}
+.c4-out-div {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  margin: 0 auto;
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
 }
 </style>
